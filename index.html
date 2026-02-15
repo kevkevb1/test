@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minute to Second Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Minute → Second Converter</h1>
+      <p class="subtitle">Enter any number of minutes to instantly convert it into seconds.</p>
+
+      <form id="converter-form" class="converter" novalidate>
+        <label for="minutes">Minutes</label>
+        <input id="minutes" name="minutes" type="number" min="0" step="1" placeholder="e.g. 5" required />
+        <button type="submit">Convert</button>
+      </form>
+
+      <section class="result" aria-live="polite">
+        <h2>Result</h2>
+        <p id="result-text">Enter a value to see the conversion.</p>
+      </section>
+    </main>
+
+    <script src="solution.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
